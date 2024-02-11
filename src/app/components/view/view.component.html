@@ -1,0 +1,208 @@
+<div class="fullpage">
+  <div class="boxContainer">
+    <div class="boxHead">
+      <hr>
+      <span class="line-text">YAY! It's BOGO</span>
+    </div>
+    <div class="boxes">
+      <div class="box" id="top" (click)="toggleBox('top')" [ngClass]="{ 'expanded': expandedBox === 'top' }">
+        <div class="checkbox-container">
+          <div class="d-flex">
+            <div>
+              <label class="radio-label" id="check-top">
+                <input type="radio" [checked]="expandedBox === 'top'">
+
+                <span class="radio-custom" [ngClass]="{'radio-custom-2': expandedBox === 'top' }"></span>
+              </label>
+            </div>
+            <div class="unit-margin">
+              <span class="unit-txt">1 Unit</span>&nbsp;<span class="discount">&nbsp;10% off&nbsp;</span>
+              <br>
+              <span class="std-price">Standard Price</span>
+            </div>
+          </div>
+          <div class="unit-margin">
+            <span class="usd">$10.00 USD</span>
+            <br>
+            <s class="striked">24.00 USD</s>
+          </div>
+        </div>
+        <div *ngIf="this.expandedBox === 'top'">
+          <div class="header">
+            <div class="size-color-1"></div>
+            <div class="size-color">Size</div>
+            <div class="size-color">Color</div>
+          </div>
+          <div class="options-container">
+            <div class="options-1">#1</div>
+            <div class="options-2">
+              <select>
+                <option value="option1">S</option>
+                <option value="option2">M</option>
+                <option value="option3">L</option>
+              </select>
+            </div>
+            <div class="options-3">
+              <select>
+                <option value="option1">Black</option>
+                <option value="option2">White</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-container">
+            <div class="options-1">#2</div>
+            <div class="options-2">
+              <select>
+                <option value="option1">S</option>
+                <option value="option2">M</option>
+                <option value="option3">L</option>
+              </select>
+            </div>
+            <div class="options-3">
+              <select>
+                <option value="option1">Black</option>
+                <option value="option2">White</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box lineHead" id="middle" (click)="toggleBox('middle')"
+        [ngClass]="{ 'expanded': expandedBox === 'middle' }">
+        <span class="line-text-2">MOST POPULAR</span>
+        <div class="checkbox-container">
+          <div class="d-flex">
+            <div>
+              <label class="radio-label" id="check-top">
+                <input type="radio" [checked]="expandedBox === 'middle'">
+
+                <span class="radio-custom" [ngClass]="{'radio-custom-2': expandedBox === 'middle' }"></span>
+              </label>
+            </div>
+            <div class="unit-margin-2 unit-txt">
+              2 Unit&nbsp;<span class="discount">&nbsp;20% off&nbsp;</span>
+            </div>
+          </div>
+          <div class="unit-margin">
+            <span class="usd">$18.00 USD</span>
+            <br>
+            <s class="striked">24.00 USD</s>
+          </div>
+        </div>
+
+        <div *ngIf="this.expandedBox === 'middle'">
+          <div class="header">
+            <div class="size-color-1"></div>
+            <div class="size-color">Size</div>
+            <div class="size-color">Color</div>
+          </div>
+          <div class="options-container">
+            <div class="options-1">#1</div>
+            <div class="options-2">
+              <select>
+                <option value="option1">S</option>
+                <option value="option2">M</option>
+                <option value="option3">L</option>
+              </select>
+            </div>
+            <div class="options-3">
+              <select>
+                <option value="option1">Black</option>
+                <option value="option2">White</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-container">
+            <div class="options-1">#2</div>
+            <div class="options-2">
+              <select>
+                <option value="option1">S</option>
+                <option value="option2">M</option>
+                <option value="option3">L</option>
+              </select>
+            </div>
+            <div class="options-3">
+              <select>
+                <option value="option1">Black</option>
+                <option value="option2">White</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="bottom" (click)="toggleBox('bottom')" [ngClass]="{ 'expanded': expandedBox === 'bottom' }">
+        <div class="checkbox-container">
+          <div class="d-flex">
+            <div>
+              <label class="radio-label" id="check-top">
+                <input type="radio" [checked]="expandedBox === 'bottom'">
+                <span class="radio-custom" [ngClass]="{'radio-custom-2': expandedBox === 'bottom' }"></span>
+              </label>
+            </div>
+            <div class="unit-margin-2 unit-txt">
+              3 Unit&nbsp;<span class="discount">&nbsp;30% off&nbsp;</span>
+            </div>
+          </div>
+          <div class="unit-margin">
+            <span class="usd">$24.00 USD</span>
+            <br>
+            <s class="striked">24.00 USD</s>
+          </div>
+        </div>
+        <div *ngIf="this.expandedBox === 'bottom'">
+          <div class="header">
+            <div class="size-color-1"></div>
+            <div class="size-color">Size</div>
+            <div class="size-color">Color</div>
+          </div>
+          <div class="options-container">
+            <div class="options-1">#1</div>
+            <div class="options-2">
+              <select>
+                <option value="option1">S</option>
+                <option value="option2">M</option>
+                <option value="option3">L</option>
+              </select>
+            </div>
+            <div class="options-3">
+              <select>
+                <option value="option1">Black</option>
+                <option value="option2">White</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-container">
+            <div class="options-1">#2</div>
+            <div class="options-2">
+              <select>
+                <option value="option1">S</option>
+                <option value="option2">M</option>
+                <option value="option3">L</option>
+              </select>
+            </div>
+            <div class="options-3">
+              <select>
+                <option value="option1">Black</option>
+                <option value="option2">White</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="checkbox-container">
+      <div class="free-delivery">
+        Free Delivery
+      </div>
+      <div class="total">
+        Total: $18:00 USD
+      </div>
+    </div>
+    <button class="add-cart-btn">
+      <span class="plus-symbol">+</span>Add to Cart
+    </button>
+    <div class="powered">
+      <i>@ Powered by Pumper</i>
+    </div>
+  </div>
+</div>
