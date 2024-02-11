@@ -13,14 +13,16 @@ export class ViewComponent implements OnInit {
   ngOnInit(): void {
     console.log('view consoles')
   }
-  toggleBox(box: string): void {
+  toggleBox(event: MouseEvent, box: string): void {
     if (this.expandedBox === box) {
       this.expandedBox = 'middle';
     } else {
       this.expandedBox = box;
     }
+    event.stopPropagation();
   }
-  onChange($event: Event){
-    console.log('called')
+  onClick(event: Event){
+    console.log('called');
+    event.stopPropagation()
   }
 }

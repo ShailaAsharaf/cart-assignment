@@ -5,7 +5,7 @@
       <span class="line-text">YAY! It's BOGO</span>
     </div>
     <div class="boxes">
-      <div class="box" id="top" (click)="toggleBox('top')" [ngClass]="{ 'expanded': expandedBox === 'top' }">
+      <div class="box" id="top" (click)="toggleBox($event,'top')" [ngClass]="{ 'expanded': expandedBox === 'top' }">
         <div class="checkbox-container">
           <div class="d-flex">
             <div>
@@ -36,14 +36,14 @@
           <div class="options-container">
             <div class="options-1">#1</div>
             <div class="options-2">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">S</option>
                 <option value="option2">M</option>
                 <option value="option3">L</option>
               </select>
             </div>
             <div class="options-3">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">Black</option>
                 <option value="option2">White</option>
               </select>
@@ -52,14 +52,14 @@
           <div class="options-container">
             <div class="options-1">#2</div>
             <div class="options-2">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">S</option>
                 <option value="option2">M</option>
                 <option value="option3">L</option>
               </select>
             </div>
             <div class="options-3">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">Black</option>
                 <option value="option2">White</option>
               </select>
@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="box lineHead" id="middle" (click)="toggleBox('middle')"
+      <div class="box lineHead" id="middle" (click)="toggleBox($event,'middle')"
         [ngClass]="{ 'expanded': expandedBox === 'middle' }">
         <span class="line-text-2">MOST POPULAR</span>
         <div class="checkbox-container">
@@ -98,14 +98,14 @@
           <div class="options-container">
             <div class="options-1">#1</div>
             <div class="options-2">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">S</option>
                 <option value="option2">M</option>
                 <option value="option3">L</option>
               </select>
             </div>
             <div class="options-3">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">Black</option>
                 <option value="option2">White</option>
               </select>
@@ -114,14 +114,14 @@
           <div class="options-container">
             <div class="options-1">#2</div>
             <div class="options-2">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">S</option>
                 <option value="option2">M</option>
                 <option value="option3">L</option>
               </select>
             </div>
             <div class="options-3">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">Black</option>
                 <option value="option2">White</option>
               </select>
@@ -129,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="box" id="bottom" (click)="toggleBox('bottom')" [ngClass]="{ 'expanded': expandedBox === 'bottom' }">
+      <div class="box" id="bottom" (click)="toggleBox($event,'bottom')" [ngClass]="{ 'expanded': expandedBox === 'bottom' }">
         <div class="checkbox-container">
           <div class="d-flex">
             <div>
@@ -156,14 +156,14 @@
           <div class="options-container">
             <div class="options-1">#1</div>
             <div class="options-2">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">S</option>
                 <option value="option2">M</option>
                 <option value="option3">L</option>
               </select>
             </div>
             <div class="options-3">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">Black</option>
                 <option value="option2">White</option>
               </select>
@@ -172,14 +172,14 @@
           <div class="options-container">
             <div class="options-1">#2</div>
             <div class="options-2">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">S</option>
                 <option value="option2">M</option>
                 <option value="option3">L</option>
               </select>
             </div>
             <div class="options-3">
-              <select>
+              <select  (click)="onClick($event)">
                 <option value="option1">Black</option>
                 <option value="option2">White</option>
               </select>
