@@ -16,22 +16,22 @@
               </label>
             </div>
             <div class="unit-margin">
-              <span class="unit-txt">1 Unit</span>&nbsp;<span class="discount">&nbsp;10% off&nbsp;</span>
-              <br>
+              <div class="unit-1-class">
+                <span class="unit-txt">1 Unit</span>&nbsp;<span class="discount">&nbsp;10% off&nbsp;</span>
+              </div>
               <span class="std-price">Standard Price</span>
             </div>
           </div>
           <div class="unit-margin">
             <span class="usd">$10.00 USD</span>
-            <br>
             <s class="striked">24.00 USD</s>
           </div>
         </div>
         <div *ngIf="this.expandedBox === 'top'">
           <div class="header">
             <div class="size-color-1"></div>
-            <div class="size-color">Size</div>
-            <div class="size-color">Color</div>
+            <div class="size-color">&nbsp;&nbsp;&nbsp;Size</div>
+            <div class="size-color">&nbsp;&nbsp;&nbsp;Color</div>
           </div>
           <div class="options-container">
             <div class="options-1">#1</div>
@@ -85,7 +85,6 @@
           </div>
           <div class="unit-margin">
             <span class="usd">$18.00 USD</span>
-            <br>
             <s class="striked">24.00 USD</s>
           </div>
         </div>
@@ -93,8 +92,8 @@
         <div *ngIf="this.expandedBox === 'middle'">
           <div class="header">
             <div class="size-color-1"></div>
-            <div class="size-color">Size</div>
-            <div class="size-color">Color</div>
+            <div class="size-color">&nbsp;&nbsp;&nbsp;Size</div>
+            <div class="size-color">&nbsp;&nbsp;&nbsp;Color</div>
           </div>
           <div class="options-container">
             <div class="options-1">#1</div>
@@ -140,20 +139,19 @@
               </label>
             </div>
             <div class="unit-margin-2 unit-txt">
-              3 Unit&nbsp;<span class="discount">&nbsp;30% off&nbsp;</span>
+              3 Unit&nbsp;<span class="discount-3">&nbsp;30% off&nbsp;</span>
             </div>
           </div>
           <div class="unit-margin">
             <span class="usd">$24.00 USD</span>
-            <br>
             <s class="striked">24.00 USD</s>
           </div>
         </div>
         <div *ngIf="this.expandedBox === 'bottom'">
           <div class="header">
             <div class="size-color-1"></div>
-            <div class="size-color">Size</div>
-            <div class="size-color">Color</div>
+            <div class="size-color">&nbsp;&nbsp;&nbsp;Size</div>
+            <div class="size-color">&nbsp;&nbsp;&nbsp;Color</div>
           </div>
           <div class="options-container">
             <div class="options-1">#1</div>
@@ -195,7 +193,7 @@
         Free Delivery
       </div>
       <div class="total">
-        Total: $18:00 USD
+        Total: <span class="total-usd">$18:00 USD</span>
       </div>
     </div>
     <button class="add-cart-btn">
