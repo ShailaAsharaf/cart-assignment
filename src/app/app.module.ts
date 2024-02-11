@@ -5,13 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewComponent } from './components/view/view.component';
 import { FormsModule } from '@angular/forms';
-import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewComponent,
-    CheckboxComponent
+    ViewComponent
   ],
   imports: [
     BrowserModule,
